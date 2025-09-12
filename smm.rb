@@ -5,20 +5,20 @@
 class Smm < Formula
   desc "Terminal User Interface for Google Cloud Platform secret management"
   homepage "https://github.com/fselich/smm"
-  version "0.1.12"
+  version "0.1.13"
   license "MIT"
   depends_on :linux
 
-  if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-    url "https://github.com/fselich/smm/releases/download/v0.1.12/smm-linux-amd64.tar.gz"
-    sha256 "0d6178c1d295341432adbf299aa039edd2922919a89a11e1392c0886e7d7b8f3"
+  if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+    url "https://github.com/fselich/smm/releases/download/v0.1.13/smm-linux-amd64.tar.gz"
+    sha256 "cd93403f4067f7f586d2a28ac0294c50d9a6ce1113f0fed0931928176a3ef83e"
     def install
       bin.install "smm"
     end
   end
-  if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-    url "https://github.com/fselich/smm/releases/download/v0.1.12/smm-linux-arm64.tar.gz"
-    sha256 "4527c79c0ca5a82f183660ff79d208d8a35e969c4d3927b99aa06201672b86e1"
+  if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+    url "https://github.com/fselich/smm/releases/download/v0.1.13/smm-linux-arm64.tar.gz"
+    sha256 "5e21999bc561aa47818dacda3faaf77a7a60c1ceeaeb892f9e9f71d9c031aed1"
     def install
       bin.install "smm"
     end
