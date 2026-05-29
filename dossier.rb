@@ -5,20 +5,20 @@
 class Dossier < Formula
   desc "Keyboard-driven TUI for navigating OpenSpec project artifacts"
   homepage "https://github.com/fselich/dossier"
-  version "0.11.0"
+  version "0.12.0"
   license "MIT"
   depends_on :linux
 
   if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/fselich/dossier/releases/download/v0.11.0/dossier-linux-amd64.tar.gz"
-    sha256 "d0311582c6217868d6898aa03d1ac5ee17f5ac4c7ede86924aeec066881c4d2e"
+    url "https://github.com/fselich/dossier/releases/download/v0.12.0/dossier-linux-amd64.tar.gz"
+    sha256 "35583f4670b9603d2c6ea3eaf0834caa373dfd2009dfdd4af5545a5e561841d2"
     define_method(:install) do
       bin.install "dossier"
     end
   end
   if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/fselich/dossier/releases/download/v0.11.0/dossier-linux-arm64.tar.gz"
-    sha256 "8fb7edfe7b7d10b492358b5bf3594d7bc09201d1f5d0b31df22653c75bf7c056"
+    url "https://github.com/fselich/dossier/releases/download/v0.12.0/dossier-linux-arm64.tar.gz"
+    sha256 "a19e1c2f70f5ce44c0da6f823a47f9b6a6b1e49fe6747a24b680a6f5529b6704"
     define_method(:install) do
       bin.install "dossier"
     end
