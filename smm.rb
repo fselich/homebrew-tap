@@ -5,20 +5,20 @@
 class Smm < Formula
   desc "Terminal User Interface for Google Cloud Platform secret management"
   homepage "https://github.com/fselich/smm"
-  version "0.2.1"
+  version "0.2.5"
   license "MIT"
   depends_on :linux
 
   if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/fselich/smm/releases/download/v0.2.1/smm-linux-amd64.tar.gz"
-    sha256 "06ede419cf1a5c794cdf03129d29b153f3533d8c18c535e30d9fa84b4d86c9c3"
+    url "https://github.com/fselich/smm/releases/download/v0.2.5/smm-linux-amd64.tar.gz"
+    sha256 "be2ec50f5ac612363a3430ea6dcef9feb6ab85145280640695b10fe32e24e6e8"
     define_method(:install) do
       bin.install "smm"
     end
   end
   if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/fselich/smm/releases/download/v0.2.1/smm-linux-arm64.tar.gz"
-    sha256 "9e450b35ef5912dce2be60cedcb6de182ba73386c31d9831d1445e816ec1fe42"
+    url "https://github.com/fselich/smm/releases/download/v0.2.5/smm-linux-arm64.tar.gz"
+    sha256 "87d8335ea0c09b0a83efb2d1cdca61ff77f3927e71dade2b6f1c1609cc767923"
     define_method(:install) do
       bin.install "smm"
     end
